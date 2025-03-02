@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .overlay {
+    height: 100vh;
+    background: url('/assets/bg-warehouse.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
+  .sidebar .nav-link {
+    padding: 10px 15px;
+  }
+  .sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .overlay h1, .overlay h3 {
+    color: white; /* สีข้อความ */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1), -2px -2px 5px rgba(0, 0, 0, 1), 2px -2px 5px rgba(0, 0, 0, 1), -2px 2px 5px rgba(0, 0, 0, 1);
+  }
+  
+  .dropdown-menu {
+    display: none; /* เริ่มต้นซ่อน */
+    position: static; /* ให้ Dropdown อยู่ตำแหน่งเดิม */
+    width: 100%; /* ให้กว้างเต็ม Sidebar */
+    background-color: transparent; /* ทำให้พื้นหลังเหมือน Sidebar */
+    border: none; /* ไม่ต้องการเส้นขอบ */
+    box-shadow: none; /* ไม่ต้องการเงา */
+  }
+  
+  .dropdown-menu .dropdown-item {
+    padding-left: 30px; /* เว้นระยะห่างซ้าย */
+    color: white; /* สีตัวหนังสือ */
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block; /* แสดงเมนูเมื่อ Hover */
+  }
+  
+  .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* เปลี่ยนสีระหว่าง Hover แบบ Transparent */
+    color: #8d8d8d; /* เปลี่ยนสีข้อความ */
+  }
+  img{
+    margin-bottom: 15px;
+  }
+  .btn-danger {
+    margin-top: 10px;
+    width: 100%;
+    
+  }

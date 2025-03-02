@@ -1,17 +1,60 @@
-<div class="login-container">
-    <div class="login-box">
-      <img src="/assets/logo.png" alt="logo" class="logo" />
-      <div>
-        <label>Email</label>
-        <input pInputText type="email" placeholder="Email" [(ngModel)]="email" />
-      </div>
-      <div>
-        <label>Password</label>
-        <input pInputText type="password" placeholder="Password" [(ngModel)]="password" />
-      </div>
-      <div>
-        <button pButton label="Login" class="p-button-primary" (click)="onLogin()"></button>
-      </div>
-        
+<!-- <div class="login-container">
+  <div class="login-box">
+    <img src="/assets/logo.png" alt="logo" class="logo" />
+    <div>
+      <label>Email</label>
+      <input pInputText type="email" placeholder="Email" [(ngModel)]="email" />
+    </div>
+    <div>
+      <label>Password</label>
+      <input
+        pInputText
+        type="password"
+        placeholder="Password"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div>
+      <button
+        pButton
+        label="Login"
+        class="p-button-primary"
+        (click)="onLogin()"
+      ></button>
     </div>
   </div>
+</div> -->
+
+<div
+  class="login-container d-flex justify-content-center align-items-center vh-100"
+>
+  <div class="login-box p-4 shadow rounded bg-white">
+    <img src="/assets/logo.png" alt="logo" class="logo mb-3" />
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input
+        id="email"
+        type="email"
+        class="form-control"
+        placeholder="Email"
+        [(ngModel)]="email"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input
+        id="password"
+        type="password"
+        class="form-control"
+        placeholder="Password"
+        [(ngModel)]="password"
+      />
+    </div>
+
+    <div>
+      <button class="btn btn-primary w-100" (click)="onLogin()">Login</button>
+    </div>
+  </div>
+</div>

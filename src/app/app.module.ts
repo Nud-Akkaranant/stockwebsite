@@ -7,20 +7,22 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { FormsModule } from '@angular/forms';
-import { RippleModule } from 'primeng/ripple';
+import { HomepageComponent } from './homepage/homepage.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginpageComponent
+    LoginpageComponent,
+    HomepageComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     InputTextModule,
     ButtonModule,
-    FormsModule,
-    RippleModule
+    FormsModule
   ],
   providers: [
     provideClientHydration(withEventReplay())
