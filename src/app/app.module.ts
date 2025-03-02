@@ -8,14 +8,13 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { FormsModule } from '@angular/forms';
 import { HomepageComponent } from './homepage/homepage.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginpageComponent,
-    HomepageComponent,
-    SidebarComponent
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
