@@ -3,14 +3,24 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
+import { FormsModule } from '@angular/forms';
+import { RippleModule } from 'primeng/ripple';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginpageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InputTextModule,
+    ButtonModule,
+    FormsModule,
+    RippleModule
   ],
   providers: [
     provideClientHydration(withEventReplay())
